@@ -4,7 +4,7 @@
 
 ## First Question
 A <- c(3, 2, 5, 6, 4, 8, 1, 2, 3, 2, 4)
-boxplot(A)
+boxplot(A, show.names=TRUE)
 
 
 ## Second Question:
@@ -38,16 +38,13 @@ colnames(patients)[6] <- "Final"
 patients
 
 ## Boxplot
-boxplot(patients[2], show.names=TRUE)
-boxplot(patients[3], show.names=TRUE)
-boxplot(patients[4], show.names=TRUE)
-boxplot(patients[5], show.names=TRUE)
-boxplot(patients[6], show.names=TRUE)
+for (i in 2:6){
+  boxplot(patients[i], show.names=TRUE)
+}
 
 ## Histograms
-hist(patients[,2])
-hist(patients[,3])
-hist(patients[,4])
-hist(patients[,5])
-hist(patients[,6])
+for (i in 2:6){
+  hist(patients[,i])
+}
+
 
