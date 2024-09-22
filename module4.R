@@ -37,4 +37,4 @@ colnames(patients)[6] <- "Final"
 ##Display Data Frame
 patients
 
-
+boxplot(patients[2])
