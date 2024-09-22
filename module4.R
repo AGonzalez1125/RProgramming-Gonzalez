@@ -37,4 +37,17 @@ colnames(patients)[6] <- "Final"
 ##Display Data Frame
 patients
 
-boxplot(patients[2])
+## Boxplot
+boxplot(patients[2], show.names=TRUE)
+boxplot(patients[3], show.names=TRUE)
+boxplot(patients[4], show.names=TRUE)
+boxplot(patients[5], show.names=TRUE)
+boxplot(patients[6], show.names=TRUE)
+
+## Histograms
+hist(patients[,2])
+hist(patients[,3])
+hist(patients[,4])
+hist(patients[,5])
+hist(patients[,6])
+
