@@ -12,3 +12,16 @@ A + B
 ## Subtraction
 A - B
 
+## Diag function
+diag(c(4,1,2,3))
+
+
+## Diag 2
+## Create the matrix with diag()
+C <- diag(c(3,3,3,3,3))
+## Fill the First row with value 1
+C[1,2:5] <- 1
+## Fill the First Column with value 2
+C[2:5,1] <- 2
+## Display
+C
