@@ -15,7 +15,10 @@ isS4(mtcars)
 
 ## Creating Example S3 object
 s <- list(name = "Myself", age = 29, GPA = 3.5)
+s2 <- list(name = "John", age = 22, GPA = 2.5)
 s
+s2
+
 
 ## Creating S4 class and object,
 setClass("student",
@@ -25,6 +28,7 @@ setClass("student",
            GPA="numeric")
 )
 s4 <- new("student",name="Myself", age=29, GPA=3.5)
+s5 <- new("student",name="John", age=22, GPA=2.5)
 s4
-
+s5
 
