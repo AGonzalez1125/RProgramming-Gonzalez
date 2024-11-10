@@ -8,12 +8,12 @@
 ##  for (j in 1:ncol(x))
 ##  {
 ##    outliers[,j] <- outliers[,j] && tukey.outlier(x[,j])
-##  }
+##}
 ##  outlier.vec <- vector(length=nrow(x))
 ##  for (i in 1:nrow(x))
 ##  { outlier.vec[i] <- all(outliers[i,]) } return(outlier.vec) }
 
-##traceback()
+## traceback(tukey_multiple)
 ## I use traceback function to find that code within the loop was not working.
 
 
